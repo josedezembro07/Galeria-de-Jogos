@@ -1,0 +1,15 @@
+<div class="card">
+  <img [src]="jogo.imagemCapa" [alt]="jogo.titulo" class="capa-jogo">
+  <div class="info-jogo">
+    <h3>{{ jogo.titulo }}</h3>
+    <p class="genero">{{ jogo.genero }}</p>
+    
+    <div class="rodape-card">
+      <span class="nota">⭐ {{ jogo.nota }}</span>
+      
+      @if (jogo.instalado) {
+        <span class="tag instalado">Instalado</span>
+      }
+    </div>
+  </div>
+</div>

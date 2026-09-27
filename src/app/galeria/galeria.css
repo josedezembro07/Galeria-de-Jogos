@@ -1,0 +1,66 @@
+.container-busca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+}
+
+input {
+  padding: 10px 40px;      
+  font-size: 20px;        
+  border-radius: 10px;    
+  border: 2px solid rgb(145, 145, 145);  
+  outline: none;          
+  width: 600px;          
+  transition: border 0.3s; 
+  background-color: #1e1e2f;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input:focus {
+  border-color: white; 
+}
+
+.grelha-jogos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.sem-resultados {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #aaa;
+  font-size: 1.2rem;
+  padding: 40px 0;
+}
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+.container-busca {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.container-busca input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 2px solid #444;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.container-busca input:focus {
+  border-color: #3498db;
+}

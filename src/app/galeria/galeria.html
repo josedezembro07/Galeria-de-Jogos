@@ -1,0 +1,11 @@
+<div class="container-busca">
+  <input type="text" [(ngModel)]="termoBusca" placeholder="Pesquisar jogo...">
+</div>
+
+<div class="grelha-jogos">
+  @for (jogo of jogosFiltrados; track jogo.id) {
+    <app-jogo-card [jogo]="jogo"></app-jogo-card>
+  } @empty {
+    <p class="sem-resultados">Nenhum jogo encontrado.</p>
+  }
+</div>

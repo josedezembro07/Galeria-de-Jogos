@@ -1,12 +1,14 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {CommonModule } from '@angular/common';
+import {FormsModule} from '@angular/forms';
+import { Galeria } from './galeria/galeria';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [CommonModule, FormsModule, Galeria],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Trabalho-Galeria-Jogos');
+  
 }
